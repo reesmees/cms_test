@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-    <header><img src="img/p3_protag.jpg" alt="Banner, en side om mine yndlings spil"></header>
+    <header><img src="img/p3_protag.jpg" alt="En side om mine yndlings spil"></header>
     <nav>
         <ul>
             <a href="#"><li>Home</li></a>
@@ -19,20 +19,42 @@
         </ul>
     </nav>
     <main>
+        <article>
+            <form action="insert.php" method="get">
+                <div class="form">
+                    <input id="heading" type="text" name="heading" placeholder="Heading"> 
+                </div>
+                <br>
+                <div class="form">
+                    <input id="imgSrc" type="text" name="imgSrc" placeholder="Image filename">
+                </div>
+                <br>
+                <div>
+                    <input id="imgAlt" type="text" name="imgAlt" placeholder="Image alt text">
+                </div>
+                <br>
+                <div>
+                    <input id="articleText" type="text" name="articleText" placeholder="Article text">
+                </div>
+                <br>
+                <input type="submit" value="Submit" content="Submit">
+            </form>
+        </article>
+
         <?php include "fetchDB.php"; ?>
     </main>
     <aside>
         <div class="login">
             <p>Username:</p>
-            <input type="text" name="username">
+            <input type="text" name="username" placeholder="Username">
             <p>Password:</p>
-            <input type="text" name="password">
+            <input type="password" name="password" placeholder="Password">
             <br>
-            <button type="button">Submit</button>
+            <button type="button">Log in</button>
         </div>
     </aside>
     <footer>
-        <h6>2017 copyright<h4>
+        <h6>2017 copyright</h6>
     </footer>
     </div>
 </body>
