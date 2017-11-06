@@ -1,6 +1,6 @@
 <?php
 
-//Etabler variabler
+//Etabler variabler til at logge ind på databasen
 $host = "localhost";
 $dbName = "cms_test_db";
 $dbUsername = "root";

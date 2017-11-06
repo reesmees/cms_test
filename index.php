@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +20,9 @@
         </ul>
     </nav>
     <main>
+    <?php 
+            //Giv mulighed for at lave nye blogindlæg hvis brugeren er logget in
+                if(isset($_SESSION['username']) && !empty($_SESSION['username'])) { ?>
         <article>
             <form action="insert.php" method="get">
                 <div class="form">
@@ -40,17 +44,30 @@
                 <input type="submit" value="Submit" content="Submit">
             </form>
         </article>
-
+                <?php } ?>
         <?php include "fetchDB.php"; ?>
     </main>
     <aside>
         <div class="login">
-            <p>Username:</p>
-            <input type="text" name="username" placeholder="Username">
-            <p>Password:</p>
-            <input type="password" name="password" placeholder="Password">
-            <br>
-            <button type="button">Log in</button>
+            <?php 
+            //Hvis brugeren er logget ind, vis dem at de er det, og giv mulighed for at logge ud
+                if(isset($_SESSION['username']) && !empty($_SESSION['username'])) { ?>
+                    <h4>Velkommen <?php echo $_SESSION['username']; ?>!</h4>
+                    <a href="logout.php?logout=true">Log ud</a>
+                    <?php
+                    //Hvis brugeren ikke er logget ind, vis log ind boks
+                } else { ?>
+                    <form action="checkUser.php" method="post">
+                        <label for="user">Username:</label>
+                        <input type="text" id="user" name="formUsername" placeholder="Username">
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="formPassword" placeholder="Password">
+                        <br>
+                        <input type="submit" value="Log in">
+                    </form>
+                    <?php 
+                }
+            ?>
         </div>
     </aside>
     <footer>
