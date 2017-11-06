@@ -24,7 +24,7 @@
             //Giv mulighed for at lave nye blogindlæg hvis brugeren er logget in
                 if(isset($_SESSION['username']) && !empty($_SESSION['username'])) { ?>
         <article>
-            <form action="insert.php" method="get">
+            <form action="insert.php" method="post">
                 <div class="form">
                     <input id="heading" type="text" name="heading" placeholder="Heading"> 
                 </div>
@@ -63,6 +63,7 @@
                         <label for="pass">Password:</label>
                         <input type="password" id="pass" name="formPassword" placeholder="Password">
                         <br>
+                        <a href="register.php">Register here</a>
                         <input type="submit" value="Log in">
                     </form>
                     <?php 
