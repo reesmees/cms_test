@@ -8,7 +8,7 @@ $statement->execute();
 
 //Lav hver row til et associative array og sæt det ind i article template
 while ($row = $statement->fetch(PDO::FETCH_ASSOC)){ ?>
-<article>
+<article class="blogpost">
     <img src="img/<?php echo $row['imgSrc']; ?>.jpg" alt="<?php echo $row['imgAlt']; ?>">
     <h2><?php echo $row['heading']; ?></h2>
     <?php if(isset($row['username']) && !empty($row['username'])) { ?>

@@ -62,7 +62,6 @@
                         <input type="text" id="user" name="formUsername" placeholder="Username">
                         <label for="pass">Password:</label>
                         <input type="password" id="pass" name="formPassword" placeholder="Password">
-                        <br>
                         <input type="submit" value="Log in">
                         <a href="register.php">Register here</a>
                     </form>

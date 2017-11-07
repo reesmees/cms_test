@@ -14,6 +14,7 @@ div.container {
     padding-top: 20px;
 }
 
+
 header {
     background-color: black;
     width: 100%;
@@ -131,4 +132,47 @@ form.register {
 
 form.register * {
     margin-bottom: 5px;
+}
+
+input[name="formPassword"] {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 760px){
+    div.container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+    }
+    aside{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        max-width: 25%;
+        justify-self: end;
+    }
+    main {
+        grid-row: 3/4;
+    }
+    input[type="submit"] {
+        max-width: 70%;
+    }
+    div.login * {
+        font-size: 12px;
+        height: auto;
+    }
+    article.blogpost:first-of-type img{
+        margin: 0;
+    }
+    article.blogpost:first-of-type h2, article.blogpost:first-of-type h3 {
+        text-align: left;
+    }
+    article.blogpost:first-of-type h3 {
+        font-size: 8px;
+    }
+    input[name="formPassword"] {
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 12px;
+    }
 }
