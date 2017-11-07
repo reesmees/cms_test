@@ -63,8 +63,8 @@
                         <label for="pass">Password:</label>
                         <input type="password" id="pass" name="formPassword" placeholder="Password">
                         <br>
-                        <a href="register.php">Register here</a>
                         <input type="submit" value="Log in">
+                        <a href="register.php">Register here</a>
                     </form>
                     <?php 
                 }

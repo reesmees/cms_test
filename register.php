@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="css/styles.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register as a new user</title>
 </head>
 <body>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="register">
         <ul>
             <li><label for="username">Enter username: <span class="required">*</span></label>
                 <input type="text" name="username" placeholder="Enter username here" />
@@ -19,6 +20,7 @@
                 <input type="password" name="password2" placeholder="Confirm password here" />
             </li>
             <li>
+                <br>
                 <input type="submit" value="Register" />
             </li>
         </ul>
