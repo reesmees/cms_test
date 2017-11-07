@@ -74,5 +74,10 @@
         <h6>2017 copyright</h6>
     </footer>
     </div>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+    window.sr = ScrollReveal({reset: true});
+    sr.reveal(".blogpost");
+    </script>
 </body>
 </html>
