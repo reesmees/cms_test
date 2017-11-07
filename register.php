@@ -8,6 +8,15 @@
     <title>Register as a new user</title>
 </head>
 <body>
+    <header><img src="img/p3_protag.jpg" alt="En side om mine yndlings spil"></header>
+    <nav>
+        <ul>
+            <a href="index.php"><li>Home</li></a>
+            <a href="#"><li>Log in</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+    </nav>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="register">
         <ul>
             <li><label for="username">Enter username: <span class="required">*</span></label>
@@ -16,7 +25,7 @@
             <li><label for="password">Enter password: <span class="required">*</span></label>
                 <input type="password" name="password" placeholder="Enter password here" />
             </li>
-            <li><label for="password2">Conform password: <span class="required">*</span></label>
+            <li><label for="password2">Confirm password: <span class="required">*</span></label>
                 <input type="password" name="password2" placeholder="Confirm password here" />
             </li>
             <li>

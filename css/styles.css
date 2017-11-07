@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Courgette";
     background-color: lightblue;
 }
 
@@ -115,6 +115,7 @@ input {
     width: 100px;
     height: 25px;
     border-radius: 5px;
+    font-family: "Courgette";
 }
 
 input:not([type="submit"]) {
