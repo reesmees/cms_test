@@ -115,7 +115,7 @@
         </div>
     </aside>
     <footer>
-        <h6>2017 copyright</h6>
+        <h6>What, why are you even looking down here? Go back up to my amazingly pretty, and incredibly functional site, look at that instead. There really isn't anything in this footer of interest.</h6>
     </footer>
     </div>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
