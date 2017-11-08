@@ -145,6 +145,14 @@ h4{
     padding-bottom: 5px;
 }
 
+div.error {
+    text-align: center;
+}
+
+div.error, input, div.login, form.register {
+    font-family: sans-serif;
+}
+
 @media screen and (max-width: 760px){
     div.container{
         display: grid;
